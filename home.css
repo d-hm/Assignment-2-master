@@ -4,7 +4,7 @@
 body {
     color: black;
     font-family: Arial,"Helvetica Neue",Helvetica,sans-serif;
-    background-color: white;
+    background-color: #ddeaff;
     animation-name: pulse;
     animation-duration: 1.6s;
     animation-iteration-count: infinite;
