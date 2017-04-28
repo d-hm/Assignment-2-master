@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+  <head>
+      <script type="text/javascript" src="jquery-3.1.1.min.js"></script>
+    <meta charset="UTF-8">
+    <title>Deric Hamer</title>
+    <link href="home.css" rel="stylesheet" type="text/css" media="all">
+    <link rel="shortcut icon" href="favicon.png" type='image/x-icon'>
+    <!-- homepage for chd.li - cs103 - class project -->
+  </head>
+<body>
+
+    <h1 id="title">Deric Hamer</h1>
+
+    <a id="projects" href="chains.html">
+      <h2>Projects</h2>
+    </a>
+
+    <!-- <div class="dropdown">
+       <button onclick="myFunction()" class="dropbtn">Projects</button>
+         <div id="myDropdown" class="dropdown-content">
+           <a href="projects/designers-voice/index.html">Designer's Voice 12_16</a>
+           <a href="projects/for-the-homie/index.html">For the Homie 12_16</a>
+           <a href="projects/printing-experiments/index.html">Printing Experiments 12_16</a>
+           <a href="projects/locals/index.html">Locals 11_16</a>
+           <a href="projects/chains/index.html">Chains 10_16</a>
+           <a href="projects/inner-thoughts/index.html">Inner Thoughts 10_16</a>
+           <a href="projects/chains/index.html">Promises to Myself 9_16</a>
+         </div>
+    </div> -->
+
+  <!-- <div class="dropdown">
+    <button onclick="myFunction()" class="dropbtn">Dropdown</button>
+      <div id="myDropdown" class="dropdown-content">
+        <a href="#">Link 1</a>
+        <a href="#">Link 2</a>
+        <a href="#">Link 3</a>
+      </div>
+  </div> -->
+
+    <a id="mood" href="mood.html">
+      <h2>Mood</h2>
+    </a>
+
+    <a id="contact" href="contact.html">
+      <h2>Contact</h2>
+    </a>
+
+    <div id="heart" class="flex-item"></div>
+
+
+  <script>
+        /* When the user clicks on the button,
+      toggle between hiding and showing the dropdown content */
+      function myFunction() {
+          document.getElementById("myDropdown").classList.toggle("show");
+      }
+
+      // Close the dropdown menu if the user clicks outside of it
+      window.onclick = function(event) {
+        if (!event.target.matches('.dropbtn')) {
+
+          var dropdowns = document.getElementsByClassName("dropdown-content");
+          var i;
+          for (i = 0; i < dropdowns.length; i++) {
+            var openDropdown = dropdowns[i];
+            if (openDropdown.classList.contains('show')) {
+              openDropdown.classList.remove('show');
+            }
+          }
+        }
+      }
+    </script>
+
+        <!-- headass <div>
+          <button type="button" class="yourlink" >This website is a <strong>portfolio of projects</strong> made for my graphic design studio class at Boston University. The projects were made over the course of the Fall 2016 semester. This website was made for CS 103. This <strong>text is a button</strong> that will splinter into all 4 content pages when clicked. Please Enjoy. </button>
+            <br>
+            <p>*Please disable pop-up blocker*</p>
+        </div>
+
+
+    <script>
+   $('button.yourlink').click(function(e) {
+    e.preventDefault();
+    window.open('/06_credits.html');
+    window.open('/05_bio_video.html');
+    window.open('/04_vinyl_project.html');
+    window.open('/03_designers_voice.html');
+    window.open('/02_borders_booklet.html');
+    window.open('/01_$_signs.html');
+   });
+    </script> -->
+
+
+</body>
+</html>
