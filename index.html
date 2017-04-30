@@ -5,38 +5,71 @@
     <meta charset="UTF-8">
     <title>Deric Hamer</title>
     <link href="home.css" rel="stylesheet" type="text/css" media="all">
-    <link rel="shortcut icon" href="favicon.png" type='image/x-icon'>
+    <link rel="icon" href="favicon.ico" type="image/gif">
     <!-- homepage for chd.li - cs103 - class project -->
+    <style>
+    .dropbtn {
+        background-color: rgba(255,255,255,0);
+        color: black;
+        font-weight: bold;
+        padding: 10px;
+        font-size: 16px;
+        border: none;
+        cursor: pointer;
+    }
+
+    /* The container <div> - needed to position the dropdown content */
+    .dropdown {
+        position: relative;
+        display: inline-block;
+    }
+
+    /* Dropdown Content (Hidden by Default) */
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        /*background-color: #f9f9f9;*/
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 1;
+    }
+
+    /* Links inside the dropdown */
+    .dropdown-content a {
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+    }
+
+    /* Change color of dropdown links on hover */
+    .dropdown-content a:hover {background-color: #f1f1f1}
+
+    /* Show the dropdown menu on hover */
+    .dropdown:hover .dropdown-content {
+        display: block;
+    }
+
+    </style>
   </head>
 <body>
 
+    <div id="div">
+
     <h1 id="title">Deric Hamer</h1>
 
-    <a id="projects" href="chains.html">
-      <h2>Projects</h2>
-    </a>
-
-    <!-- <div class="dropdown">
-       <button onclick="myFunction()" class="dropbtn">Projects</button>
-         <div id="myDropdown" class="dropdown-content">
-           <a href="projects/designers-voice/index.html">Designer's Voice 12_16</a>
-           <a href="projects/for-the-homie/index.html">For the Homie 12_16</a>
-           <a href="projects/printing-experiments/index.html">Printing Experiments 12_16</a>
-           <a href="projects/locals/index.html">Locals 11_16</a>
-           <a href="projects/chains/index.html">Chains 10_16</a>
-           <a href="projects/inner-thoughts/index.html">Inner Thoughts 10_16</a>
-           <a href="projects/chains/index.html">Promises to Myself 9_16</a>
-         </div>
-    </div> -->
-
-  <!-- <div class="dropdown">
-    <button onclick="myFunction()" class="dropbtn">Dropdown</button>
-      <div id="myDropdown" class="dropdown-content">
-        <a href="#">Link 1</a>
-        <a href="#">Link 2</a>
-        <a href="#">Link 3</a>
+    <div class="dropdown">
+      <button class="dropbtn"><h2>Projects</h2></button>
+      <div class="dropdown-content">
+        <a href="projects/designers-voice/index.html">Designer's Voice 12_16</a>
+        <a href="projects/for-the-homie/index.html">For the Homie 12_16</a>
+        <a href="projects/printing-experiments/index.html">Printing Experiments 12_16</a>
+        <a href="projects/locals/index.html">Locals 11_16</a>
+        <a href="projects/chains/index.html">Chains 10_16</a>
+        <a href="projects/inner-thoughts/index.html">Inner Thoughts 10_16</a>
+        <a href="projects/chains/index.html">Promises to Myself 9_16</a>
       </div>
-  </div> -->
+    </div>
 
     <a id="mood" href="mood.html">
       <h2>Mood</h2>
@@ -46,51 +79,11 @@
       <h2>Contact</h2>
     </a>
 
+    <div id="heart_div">
     <div id="heart" class="flex-item"></div>
+    </div>
 
-
-  <script>
-        /* When the user clicks on the button,
-      toggle between hiding and showing the dropdown content */
-      function myFunction() {
-          document.getElementById("myDropdown").classList.toggle("show");
-      }
-
-      // Close the dropdown menu if the user clicks outside of it
-      window.onclick = function(event) {
-        if (!event.target.matches('.dropbtn')) {
-
-          var dropdowns = document.getElementsByClassName("dropdown-content");
-          var i;
-          for (i = 0; i < dropdowns.length; i++) {
-            var openDropdown = dropdowns[i];
-            if (openDropdown.classList.contains('show')) {
-              openDropdown.classList.remove('show');
-            }
-          }
-        }
-      }
-    </script>
-
-        <!-- headass <div>
-          <button type="button" class="yourlink" >This website is a <strong>portfolio of projects</strong> made for my graphic design studio class at Boston University. The projects were made over the course of the Fall 2016 semester. This website was made for CS 103. This <strong>text is a button</strong> that will splinter into all 4 content pages when clicked. Please Enjoy. </button>
-            <br>
-            <p>*Please disable pop-up blocker*</p>
-        </div>
-
-
-    <script>
-   $('button.yourlink').click(function(e) {
-    e.preventDefault();
-    window.open('/06_credits.html');
-    window.open('/05_bio_video.html');
-    window.open('/04_vinyl_project.html');
-    window.open('/03_designers_voice.html');
-    window.open('/02_borders_booklet.html');
-    window.open('/01_$_signs.html');
-   });
-    </script> -->
-
+    </div>
 
 </body>
 </html>

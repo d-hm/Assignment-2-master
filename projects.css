@@ -96,13 +96,23 @@ a:active {
 
 nav {
   display: flex;
-  flex: row wrap;
+  flex-direction: row;
   justify-content: space-between;
   align-items: baseline;
   margin: 0 auto;
   padding-bottom: 5%;
 }
 
-@media (max-width: 600px) {
+
+@media (max-width: 1000px) {
+  nav {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: baseline;
+    margin: 0 auto;
+    padding-bottom: 5%;
+  }
 
 }
